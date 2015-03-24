@@ -14,8 +14,8 @@
                 <!-- <parameter name="nodeName" value="europe1" /> -->
                 <parameter name="enabled" value="true"/>
                 <parameter name="configuration.db.default"
-                           value="${ORIENTDB_HOME}/config/default-distributed-db-config.json"/>
-                <parameter name="configuration.hazelcast" value="${ORIENTDB_HOME}/config/hazelcast.xml"/>
+                           value="${ORIENTDB2_HOME}/config/default-distributed-db-config.json"/>
+                <parameter name="configuration.hazelcast" value="${ORIENTDB2_HOME}/config/hazelcast.xml"/>
                 <parameter name="conflict.resolver.impl"
                            value="com.orientechnologies.orient.server.distributed.conflict.ODefaultReplicationConflictResolver"/>
 
@@ -70,7 +70,7 @@
         </protocols>
         <listeners>
             <listener protocol="binary" ip-address="0.0.0.0" port-range="2424-2430"/>
-            <listener protocol="http" ip-address="0.0.0.0" port-range="2480-2490">
+            <listener protocol="http" ip-address="0.0.0.0" port-range="8080-8090">
                 <parameters>
                     <!-- Connection's custom parameters. If not specified the global configuration will be taken -->
                     <parameter name="network.http.charset" value="utf-8"/>
